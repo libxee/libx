@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 架构整洁之道
+title: Thinking
 date: 2021-07-07
 author: 'libiao'
-postname: clean_arch
+postname: think
 tags:
   - 架构
 ---
