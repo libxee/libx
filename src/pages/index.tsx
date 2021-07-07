@@ -5,8 +5,8 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-
 import './global.css'
+import { formatDate } from '../utils/utils'
 
 const BlogIndex: React.FC<{ data: any; location: Location }> = ({
   data,
@@ -87,14 +87,3 @@ export const pageQuery = graphql`
   }
 `
 
-function formatDate(date: string) {
-  const d = new Date(date)
-  let month = '' + (d.getMonth() + 1)
-  let day = '' + d.getDate()
-  const year = d.getFullYear()
-
-  if (month.length < 2) month = '0' + month
-  if (day.length < 2) day = '0' + day
-
-  return [year, month, day].join('/')
-}
