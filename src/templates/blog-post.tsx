@@ -32,7 +32,7 @@ const BlogPostTemplate: React.FC<{
               marginBottom: 0,
             }}
           >
-            {post.frontmatter.title}
+            {post?.frontmatter?.title}
           </h1>
           <p
             style={{
@@ -41,10 +41,10 @@ const BlogPostTemplate: React.FC<{
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post?.frontmatter?.date}
           </p>
         </header>
-        <Img fluid={post.frontmatter.header_img.childImageSharp.fluid} />
+        {post?.frontmatter?.header_img && <Img fluid={post.frontmatter.header_img.childImageSharp.fluid} />}
         <br />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
