@@ -1,0 +1,68 @@
+
+body {
+  --pink: rgb(255, 167, 196);
+  background-color: var(--bg);
+  --bg: #fff;
+  --bg-secondary: rgb(249, 250, 251);
+  --header: var(--pink);
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: #d23669;
+  --hr: hsla(0, 0%, 0%, .2);
+  --inlineCode-bg: rgba(255, 229, 100, .2);
+  --inlineCode-text: #1a1a1a;
+  --form-shadow: 0 2px 15px 0 rgba(210, 214, 220, .5);
+}
+
+body.light {
+  --bg: #fff;
+  --bg-secondary: rgb(249, 250, 251);
+  --header: var(--pink);
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: #d23669;
+  --hr: hsla(0, 0%, 0%, .2);
+  --inlineCode-bg: rgba(255, 229, 100, .2);
+  --inlineCode-text: #1a1a1a;
+  --form-shadow: 0 2px 15px 0 rgba(210, 214, 220, .5);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #282c35;
+  --bg-secondary: rgb(54, 60, 72);
+  --header: #fff;
+  --textNormal: rgba(255, 255, 255, .88);
+  --textTitle: #fff;
+  --textLink: var(--pink);
+  --hr: hsla(0, 0%, 100%, .2);
+  --inlineCode-bg: rgba(115, 124, 153, .2);
+  --inlineCode-text: #e6e6e6;
+  --form-shadow: 0 2px 15px 0 rgba(26, 26, 27, .637);
+}
+
+#gatsby-focus-wrapper {
+  background-color: var(--bg);
+  color: var(--textNormal);
+  transition: color .2s ease-out, background .2s ease-out;
+}
+
+#gatsby-focus-wrapper a {
+  color: var(--textLink);
+}
+
+#gatsby-focus-wrapper blockquote {
+  color: var(--quoteColor);
+}
+
+#gatsby-focus-wrapper .gatsby-highlight {
+  background-color: var(--codeBlockBackground);
+}
+
+#gatsby-focus-wrapper .language-text {
+  font-family: "Iosevka Custom", "Input Mono", "Source Code Pro", "Fira Mono", monospace;
+  color: var(--codeColor);
+  text-shadow: none;
+  background: none;
+}
