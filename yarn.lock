@@ -2243,7 +2243,7 @@
 
 "@vercel/node@1.9.0":
   version "1.9.0"
-  resolved "https://bnpm.byted.org/@vercel/node/-/@vercel/node-1.9.0.tgz#6b64f3b9a962ddb1089276fad00f441a1f4b9cf0"
+  resolved "https://registry.npmjs.org/@vercel/node/-/@vercel/node-1.9.0.tgz#6b64f3b9a962ddb1089276fad00f441a1f4b9cf0"
   integrity sha1-a2Tzuali3bEIknb60A9EGh9LnPA=
   dependencies:
     "@types/node" "*"
